@@ -1,74 +1,38 @@
-import React from "react";
-import {
-  RxDiscordLogo,
-  RxGithubLogo,
-  RxInstagramLogo,
-  RxTwitterLogo,
-  RxLinkedinLogo,
-} from "react-icons/rx";
-
-import { FaYoutube } from "react-icons/fa";
+import { RxLinkedinLogo, RxGithubLogo } from "react-icons/rx";
+import { FaInstagram } from "react-icons/fa";
+import { personalData } from "@/constants";
 
 const Footer = () => {
   return (
-    <div className="w-full h-full bg-transparent text-gray-200 shadow-lg p-[15px] ">
-        <div className="w-full flex flex-col items-center justify-center m-auto">
-            <div className="w-full h-full flex flex-row items-center justify-around flex-wrap">
-                
+    <footer className="text-white w-full">
+      <nav className="flex flex-wrap justify-center py-4 gap-6">
 
-                <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
-                    <div className="font-bold text-[16px]">Community</div>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                        <FaYoutube />
-                        <span className="text-[15px] ml-[6px]">Youtube</span>    
-                    </p>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                        <RxGithubLogo />
-                        <span className="text-[15px] ml-[6px]">Github</span>    
-                    </p>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                        <RxDiscordLogo />
-                        <span className="text-[15px] ml-[6px]">Discord</span>    
-                    </p>
-                </div>
-                <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
-                    <div className="font-bold text-[16px]">Social Media</div>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                        <FaYoutube />
-                        <span className="text-[15px] ml-[6px]">Instagram</span>    
-                    </p>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                        <RxGithubLogo />
-                        <span className="text-[15px] ml-[6px]">Twitter</span>    
-                    </p>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                        <RxDiscordLogo />
-                        <span className="text-[15px] ml-[6px]">Linkedin</span>    
-                    </p>
-                </div>
-                <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
-                    <div className="font-bold text-[16px]">About</div>
-                   <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                     
-                        <span className="text-[15px] ml-[6px]">Become Sponsor</span>    
-                    </p>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                      
-                        <span className="text-[15px] ml-[6px]">Learning about me</span>    
-                    </p>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                  
-                        <span className="text-[15px] ml-[6px]">saurabhsuresh4s@gmail.com</span>    
-                    </p>
-                </div>
-            </div>
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="flex flex-row items-center my-[15px] text-white hover:text-gray-300">
+          <RxGithubLogo />
+          <span className="text-[15px] ml-[6px]">Github</span>
+        </a>
+        
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="flex flex-row items-center my-[15px] text-white hover:text-gray-300">
+          <RxGithubLogo />
+          <span className="text-[15px] ml-[6px]">Twitter</span>
+        </a>
+        
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="flex flex-row items-center my-[15px] text-white hover:text-gray-300">
+          <RxLinkedinLogo />
+          <span className="text-[15px] ml-[6px]">LinkedIn</span>
+        </a>
+        
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="flex flex-row items-center my-[15px] text-white hover:text-gray-300">
+          <FaInstagram />
+          <span className="text-[15px] ml-[6px]">Instagram</span>
+        </a>
 
-            <div className="mb-[20px] text-[15px] text-center">
-                 Saurabh Suresh 2024
-            </div>
-        </div>
-    </div>
-  )
-}
+      </nav>
+      <div className="mb-[20px] text-md text-center">
+        {personalData.fName} {personalData.lName} {new Date().getFullYear()}
+      </div>
+    </footer>
+  );
+};
 
-export default Footer
+export default Footer;

@@ -33,7 +33,7 @@ const Bento = () => {
             <img className="w-8 invert" src="/x-twitter.svg" alt=""/>
             <span>Profile</span>
           </div>
-          <div className="bg-[url('https://pbs.twimg.com/media/GIEHhd3XQAAxo15?format=jpg&name=4096x4096')] bg-cover bg-no-repeat h-40 lg:h-32 relative px-3">
+          <div className="bg-[url('https://pbs.twimg.com/profile_banners/1737440772490711040/1709913760/1500x500')] bg-cover bg-no-repeat h-40 lg:h-32 relative px-3">
             <div className="absolute -bottom-11">
               <img className="w-[85px] rounded-full border-zinc-900 hover:border-zinc-950 border-4" src="me.jpeg" alt="My X profile picture"/>
             </div>
