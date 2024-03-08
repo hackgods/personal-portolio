@@ -293,15 +293,19 @@ export const Skill_data = [
   export const navItems = [
     {
       name: "Home",
-      link: "/"
+      link: "#home"
+    },
+    {
+      name: "Skills",
+      link: "#skills"
     },
     {
       name: "About",
-      link: "#about"
+      link: "#about-me"
     },
     {
-      name: "Contact",
-      link: "/contact"
+      name: "Projects",
+      link: "#projects"
     },
   ];
   
@@ -381,4 +385,50 @@ export const Skill_data = [
       src: "/aws.png"
     },
   ];  
+  
+
+export const projects = [
+    {
+      src: "/projects/movies-ott.jpg",
+      title: "Movies Streaming OTT",
+      description: "An OTT video streaming app like Netflix to stream movies with a fully functional backend in Node.js with the frontend powered by NextJS 14",
+      link: "https://movies-app-hackgods.vercel.app/"
+    },
+    {
+      src: "/projects/blu-chat.jpg",
+      title: "Bluetooth E2E Messaging",
+      description: "Bluetooth Secure Chat System with End-to-End Encryption - Communication without Internet dependency",
+      link: "https://www.linkedin.com/posts/hackgod_bluchat-bluetooth-secure-chat-system-activity-7125135267123875841-7-kK?utm_source=share&utm_medium=member_desktop"
+    },
+    {
+      src: "/projects/vfs.jpeg",
+      title: "Virtual File System",
+      description: "A virtual file system capable of storing and managing files with functionalities like file compression, encryption, versioning, and caching",
+      link: "https://github.com/hackgods/virtual-file-system"
+    },
+    {
+      src: "/projects/bigbucks.jpg",
+      title: "Big Bucks Banking App",
+      description: "Mock banking app, enabling user creation and secure fund transfers. Simulates real-world banking functionalities without involving real money",
+      link: "https://github.com/hackgods/virtual-file-system"
+    },
+    {
+      src: "/projects/wireless-attendence-manager.jpg",
+      title: "Wireless Attendance Manager",
+      description: "Application designed to track students' daily attendance automatically by using wireless technology that can scan and identify nearby student devices within a 100m radius",
+      link: "https://www.linkedin.com/posts/hackgod_technology-data-students-activity-6934392969080754176-YuRQ?utm_source=share&utm_medium=member_desktop"
+    },
+    {
+      src: "/projects/smart-gate.jpg",
+      title: "Smart Gate Number Plate IoT System",
+      description: "It uses Raspberry Pi with camera module to scan the number plate of the vehicles which passes and then processes all information of that plate number (Vehicle owner name, vehicle model, registration date, insurance date, RC validity etc.) on Android/iOS app",
+      link: "https://www.linkedin.com/posts/hackgod_iot-android-ios-activity-6776868398413422593-1GOf?utm_source=share&utm_medium=member_desktop"
+    },
+    {
+      src: "/projects/smart-credit.jpg",
+      title: "Smart Credit - RFID Payment",
+      description: "A Tap n Pay mechanism that uses the college ID card to store credit amount and then pay on a tap. This system can be used in college for easier and faster payments at Foodcourts and Cafes. The college ID acts like a smart card (Every user has a unique card number with the user's data, just like a bank card) and payments can be done by tapping the card on the system.",
+      link: "https://www.linkedin.com/posts/hackgod_smartcredit-smartpayment-payments-activity-6785100651106971648-bRdr?utm_source=share&utm_medium=member_desktop"
+    }
+  ];
   

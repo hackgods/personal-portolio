@@ -1,9 +1,11 @@
 import React from "react";
 import HeroContent from "../sub/HeroContent";
+import { StickyNav } from "../ui/sticky-navbar";
+import { navItems } from "@/constants";
 
 const Hero = () => {
   return (
-    <div className="relative flex flex-col h-full w-full" id="about-me">
+    <div className="relative flex flex-col h-full w-full" id="home">
       <video
         autoPlay
         muted
@@ -12,6 +14,7 @@ const Hero = () => {
       >
         <source src="/blackhole.webm" type="video/webm" />
       </video>
+      <StickyNav navItems={navItems} />
       <HeroContent />
     </div>
   );

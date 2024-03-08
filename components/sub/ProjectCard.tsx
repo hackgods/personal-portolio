@@ -5,24 +5,28 @@ interface Props {
   src: string;
   title: string;
   description: string;
+  link: string;
 }
 
-const ProjectCard = ({ src, title, description }: Props) => {
+const ProjectCard = ({ src, title, description,link }: Props) => {
   return (
-    <div className="relative overflow-hidden rounded-lg shadow-lg border border-[#2A0E61]">
-      <Image
-        src={src}
-        alt={title}
-        width={1000}
-        height={1000}
-        className="w-full object-contain"
-      />
+    <div className="card z-20 row-span-1 relative overflow-hidden p-8 border border-black hover:border-white transition-colors duration-300 hover:border-2">
+        <div className="h-full w-full mx-auto flex justify-between relative z-10">
+          <div className="space-y-4 w-full text-center justify-around">
+          <img className="w-96 h-52 rounded-3xl" src={src} alt={`${title} project img`} />
+          <p className="text-xl font-semibold bg-clip-text text-transparent bg-gradient-to-b to-neutral-200 from-neutral-400">
+            {title}
+          </p>
 
-      <div className="relative p-4">
-        <h1 className="text-2xl font-semibold text-white">{title}</h1>
-        <p className="mt-2 text-gray-300">{description}</p>
+          <p className="text-md text-justify bg-clip-text text-transparent bg-gradient-to-b to-neutral-400 from-neutral-400">
+            {description}
+          </p>
+          </div>
+        </div>
+        <div className="circle-blur-big rounded-3xl top-0 left-0 w-32 animate-pulse hover:animate-none"></div>
+        <a href={link} className="link-full" title={`${title}`}
+          target="_blank"></a>
       </div>
-    </div>
   );
 };
 

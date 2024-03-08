@@ -12,7 +12,7 @@ import Bento from "../ui/bento";
 
 const About = () => {
   return (
-    <div className="flex flex-col relative items-center min-h-screen w-full h-full bg-neutral-950 z-[20]">
+    <div className="flex flex-col relative items-center min-h-screen w-full h-full bg-neutral-950 z-[20]" id="about-me">
         <motion.div
           variants={slideInFromTop}
           className="text-5xl font-semibold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600 mt-4">
