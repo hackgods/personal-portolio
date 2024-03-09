@@ -17,7 +17,8 @@ export const metadata: Metadata = {
     title: "Saurabh Suresh's Portfolio",
     description: "Saurabh is a Full Stack Software Engineer with experience in Web, Mobile, and Software development based out of Newcastle upon Tyne, United Kingdom.",
     url: "https://www.saurabhsuresh.com",
-    siteName: "Saurabh Suresh's Portfolio"
+    siteName: "Saurabh Suresh's Portfolio",
+    images: ['https://drive.usercontent.google.com/download?id=1GmmtkM4Q1LJqyqgjtkW7FUrZankr_rwa']
   },
   keywords: ['Saurabh Suresh', 'Full stack developer', 'Newcastle University student', 'Newcastle software developer'],
   twitter:{
