@@ -34,12 +34,25 @@ const HeroContent = () => {
           className="text-lg text-gray-300 my-2 max-w-[600px]">
             {personalData.description}
         </motion.p>
-        <motion.a
-          variants={slideInFromLeft(1)}
-          className="py-2 text-center text-stone-950/75 font-bold cursor-pointer rounded-lg max-w-[200px] bg-white"
-        >
-          Download CV
-        </motion.a>
+
+        <div className="flex flex-row gap-6">
+            <motion.a
+            href={personalData.resumeLink}
+              variants={slideInFromLeft(1)}
+              className="p-2 text-center text-stone-950/75 font-bold cursor-pointer rounded-lg max-w-[200px] bg-white"
+            >
+                Download CV
+            </motion.a>
+
+            <motion.a
+            href={`mailto:${personalData.email}`}
+              variants={slideInFromLeft(1)}
+              className="p-2 text-center text-stone-100 cursor-pointer rounded-lg max-w-[200px] bg-zinc-700/70 border border-white"
+            >
+                Get In Touch
+            </motion.a>
+        </div>
+
       </div>
 
       <div className="flex justify-center items-center">

@@ -5,11 +5,11 @@ import { projects } from "@/constants";
 const Projects = () => {
   return (
     <div
-      className="flex flex-col items-center justify-center py-15 mb-20"
+      className="flex flex-col items-center justify-center py-15 mb-20 snap-always snap-start"
       id="projects"
     >
       <div
-          className="text-5xl font-semibold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600 mt-4 mb-8 ">
+          className="text-5xl font-semibold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600 mt-4 mb-8 p-2">
           Projects
         </div>
 

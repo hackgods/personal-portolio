@@ -20,7 +20,7 @@ const SkillDataProvider = ({ src, index} : Props) => {
         visible: {opacity: 1}
     }
 
-    const animationDelay = 0.05
+    const animationDelay = 0.06
   return (
         <motion.div
         ref={ref}
@@ -33,7 +33,7 @@ const SkillDataProvider = ({ src, index} : Props) => {
                 <Image
                     src={src}
                     width='80'
-                    height='80'
+                    height='0'
                     className='w-20 h-20 object-contain'
                     alt='skill image'
                 />

@@ -1,12 +1,27 @@
+"use client"
+
 import React from 'react'
 import Image from 'next/image'
-import { favStacks } from '@/constants'
+import { favStacks, personalData } from '@/constants'
+import { motion } from 'framer-motion'
+import { fadeUp, slideInFromLeft } from '@/utils/motion'
+import { useInView } from 'react-intersection-observer'
 
 const Bento = () => {
+  const {ref, inView} = useInView({
+    triggerOnce: true
+})
+
   return (
     <section className="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-5">
       
-      <div className="card order-1 lg:order-none col-span-2 border-gray-950">
+      
+      <motion.div 
+      ref={ref}
+      initial="hidden"
+      animate={inView ? "visible" : "hidden"}
+      variants={fadeUp}
+      className="card order-1 lg:order-none col-span-2 border-gray-950">
         <div
           className="border-gradient animate-bgWaves h-full w-full rounded-2xl">
           <div className="border-gradient__box">
@@ -24,9 +39,13 @@ const Bento = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
       
-      <div
+      <motion.div
+      ref={ref}
+      initial="hidden"
+      animate={inView ? "visible" : "hidden"}
+      variants={fadeUp}
         className="card order-3 lg:order-none">
         <div className="transition-smooth bg-gray-950 hover:bg-zinc-900 hover:border-gray-900 text-white rounded-3xl relative z-10">
           <div className="flex items-center gap-2 p-4">
@@ -47,11 +66,16 @@ const Bento = () => {
             <p className="text-zinc-600">A passionate Full stack web & mobile developer</p>
           </div>
         </div>
-      </div>
+      </motion.div>
 
 
 
-      <div className="card order-5 lg:order-none lg:row-span-3 relative overflow-hidden p-8">
+      <motion.div
+      ref={ref}
+      initial="hidden"
+      animate={inView ? "visible" : "hidden"}
+      variants={fadeUp} 
+      className="card order-5 lg:order-none lg:row-span-3 relative overflow-hidden p-8">
         <div className="h-full w-full mx-auto flex items-center relative z-10">
           <div className="space-y-4 w-full text-center">
           <img className="w-96 animate-pulse hover:animate-none" src="/newcastle2.png" alt="Newcastle University" />
@@ -59,11 +83,16 @@ const Bento = () => {
           </div>
         </div>
         <div className="circle-blur rounded-3xl top-0 left-0 w-32"></div>
-      </div>
+      </motion.div>
 
 
 
-      <div className="card bg-grad-black-indigo transition-smooth delay-50 order-2 lg:order-none h-48 md:h-full lg:h-auto p-4 relative overflow-hidden">
+      <motion.div
+      ref={ref}
+      initial="hidden"
+      animate={inView ? "visible" : "hidden"}
+      variants={fadeUp} 
+      className="card bg-grad-black-indigo transition-smooth delay-50 order-2 lg:order-none h-48 md:h-full lg:h-auto p-4 relative overflow-hidden">
         <div className="flex flex-col justify-between h-full">
           <div className="available-label">
             <span className="relative flex h-3 w-3">
@@ -78,22 +107,32 @@ const Bento = () => {
           <img className="w-52 lg:w-44 absolute top-2 -right-4 z-0 opacity-20 -rotate-12" src="/envelope-regular.svg"
             alt="" />
         </div>
-        <a href="mailto:saurabhsuresh4s@gmail.com" className="link-full"
+        <a href={`mailto:${personalData.email}`} className="link-full"
           title="Click to send email"></a>
-      </div>
+      </motion.div>
 
 
-      <div className="card order-6 lg:order-none overflow-hidden relative">
+      <motion.div
+      ref={ref}
+      initial="hidden"
+      animate={inView ? "visible" : "hidden"}
+      variants={fadeUp} 
+      className="card order-6 lg:order-none overflow-hidden relative">
         <div className="flex h-full flex-col justify-between gap-5 p-5 relative">
             <p className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-b to-neutral-200 from-neutral-600">100k +</p>   
             <p className="text-base relative text-zinc-300">Lines of code written</p> 
             <div className="circle-blur rounded-3xl"></div>
         <img className="w-52 lg:w-44 absolute top-2 -right-4 z-0 opacity-100 -rotate-12" src="/code.svg" alt="Code" />
         </div>
-      </div>
+      </motion.div>
 
 
-      <div className="card bg-backdrop-gradient order-4 lg:order-none row-span-2 col-span-2 p-2 relative group">
+      <motion.div 
+      ref={ref}
+      initial="hidden"
+      animate={inView ? "visible" : "hidden"}
+      variants={fadeUp}
+      className="card bg-backdrop-gradient order-4 lg:order-none row-span-2 col-span-2 p-2 relative group">
         <div className="bg-backdrop-blur">
           <h2 className="font-medium text-3xl text-black/70">Favourite Tech Stacks</h2>
 
@@ -113,7 +152,8 @@ const Bento = () => {
         </div>
         <a href="https://github.com/hackgods/" className="link-full" title="HackGods Github"
           target="_blank"></a>
-      </div>
+      </motion.div>
+
     </section>
   )
 }

@@ -37,3 +37,16 @@ export function slideInFromLeft(delay: number) {
       },
     },
   };
+
+  export const fadeUp = {
+    hidden: {opacity: 0, scale: 0.5 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        delay: 0.1,
+        duration: 0.9,
+        ease: [0, 0.71, 0.2, 1.01]
+      },
+    },
+  };

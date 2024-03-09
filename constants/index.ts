@@ -446,5 +446,5 @@ export const projects = [
     twitter: "https://twitter.com/hxckgxd",
     instagram: "https://www.instagram.com/_hackgod/",
     twitterCover: "https://pbs.twimg.com/profile_banners/1737440772490711040/1709913760/1500x500",
-    resume: "...",
+    resumeLink: "https://drive.google.com/uc?export=download&id=1xedHbKHa0_Cpax9QtbaYOchJVXu5USHq",
   };

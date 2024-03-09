@@ -5,7 +5,7 @@ import { navItems } from "@/constants";
 
 const Hero = () => {
   return (
-    <div className="relative flex flex-col h-full w-full" id="home">
+    <div className="relative flex flex-col h-full w-full snap-center" id="home">
       <video
         autoPlay
         muted

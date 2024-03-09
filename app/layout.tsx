@@ -6,6 +6,7 @@ import Navbar from "@/components/main/Navbar";
 import Footer from "@/components/main/Footer";
 import { FloatingNav } from "@/components/ui/floating-navbar";
 import { navItems } from "@/constants";
+import NoMobileScreen from "@/components/sub/NoMobileScreen";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,14 +21,21 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="snap-y snap-mandatory">
       <body
         className={`${inter.className} bg-neutral-950 overflow-y-scroll overflow-x-hidden`}
       >
+        <div className="hidden md:flex">
+          <StarsCanvas />
+          <FloatingNav navItems={navItems} />
+          {children}
+          <Footer />
+        </div>
+
+        <div className="block md:hidden">
         <StarsCanvas />
-        <FloatingNav navItems={navItems} />
-        {children}
-        <Footer />
+        <NoMobileScreen/>
+        </div>
       </body>
     </html>
   );
