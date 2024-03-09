@@ -11,8 +11,8 @@ import NoMobileScreen from "@/components/sub/NoMobileScreen";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Saurabh Suresh Portfolio",
-  description: "Welcome to Saurabh's portfolio",
+  title: "Saurabh Suresh's Portfolio",
+  description: "Saurabh is a Full Stack Software Engineer with experience in Web, Mobile, and Software development based out of Newcastle upon Tyne, United Kingdom.",
 };
 
 export default function RootLayout({
