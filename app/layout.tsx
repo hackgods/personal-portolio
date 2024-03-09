@@ -25,17 +25,12 @@ export default function RootLayout({
       <body
         className={`${inter.className} bg-neutral-950 overflow-y-scroll overflow-x-hidden`}
       >
-        <div className="hidden md:flex">
+       
           <StarsCanvas />
           <FloatingNav navItems={navItems} />
           {children}
           <Footer />
-        </div>
-
-        <div className="block md:hidden">
-        <StarsCanvas />
-        <NoMobileScreen/>
-        </div>
+       
       </body>
     </html>
   );
