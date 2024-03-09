@@ -36,6 +36,7 @@ const SkillDataProvider = ({ src, index} : Props) => {
                     height='0'
                     className='w-20 h-20 object-contain'
                     alt='skill image'
+                    loading="lazy"
                 />
         </motion.div>
   )

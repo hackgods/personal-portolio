@@ -78,7 +78,13 @@ const Bento = () => {
       className="card order-5 lg:order-none lg:row-span-3 relative overflow-hidden p-8">
         <div className="h-full w-full mx-auto flex items-center relative z-10">
           <div className="space-y-4 w-full text-center">
-          <img className="w-96 animate-pulse hover:animate-none" src="/newcastle2.png" alt="Newcastle University" />
+          <Image 
+            width="384"
+            height="0"
+            className="w-96 h-auto animate-pulse hover:animate-none"
+            src="/newcastle2.png" alt="Newcastle University"
+            loading="lazy"
+            />
           <p className="text-xl bg-clip-text text-transparent bg-gradient-to-b to-neutral-200 from-neutral-400">Master&apos;s Advanced Computer Science</p>
           </div>
         </div>
@@ -146,6 +152,7 @@ const Bento = () => {
                     height='50'
                     className='w-20 h-20 object-contain'
                     alt={`${item.name}`}
+                    loading="lazy"
                 />
         ))}
           </div>

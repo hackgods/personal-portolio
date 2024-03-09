@@ -65,6 +65,7 @@ const HeroContent = () => {
                 alt="work icons"
                 height={2000}
                 width={2000}
+                loading="eager"
               />
               <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                 <Image
@@ -73,6 +74,7 @@ const HeroContent = () => {
                   alt="me"
                   height={300}
                   width={300}
+                  loading="eager"
                 />
               </div>
             </motion.div>
