@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     description: "Saurabh is a Full Stack Software Engineer with experience in Web, Mobile, and Software development based out of Newcastle upon Tyne, United Kingdom.",
     url: "https://www.saurabhsuresh.com",
     siteName: "Saurabh Suresh's Portfolio",
-    images: ['https://drive.usercontent.google.com/download?id=1GmmtkM4Q1LJqyqgjtkW7FUrZankr_rwa']
+    images: ['https://i.ibb.co/9T5gCx4/saurabh-website.png']
   },
   keywords: ['Saurabh Suresh', 'Full stack developer', 'Newcastle University student', 'Newcastle software developer'],
   twitter:{
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     title: "Saurabh Suresh's Portfolio",
     description: "Saurabh is a Full Stack Software Engineer with experience in Web, Mobile, and Software development based out of Newcastle upon Tyne, United Kingdom.",
     creator: "@hxckgxd",
-    images: ['https://drive.usercontent.google.com/download?id=1GmmtkM4Q1LJqyqgjtkW7FUrZankr_rwa']
+    images: ['https://i.ibb.co/9T5gCx4/saurabh-website.png']
   }
 };
 
