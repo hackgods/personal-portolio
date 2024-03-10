@@ -420,8 +420,8 @@ export const projects = [
     },
     {
       src: "/projects/smart-gate.jpg",
-      title: "Smart Gate Number Plate IoT System",
-      description: "It uses Raspberry Pi with camera module to scan the number plate of the vehicles which passes and then processes all information of that plate number (Vehicle owner name, vehicle model, registration date, insurance date, RC validity etc.) on Android/iOS app",
+      title: "Smart Number Plate IoT System",
+      description: "It uses Raspberry Pi with camera module to scan the number plate of the vehicles and then processes information of that plate number (Vehicle owner name, vehicle model, registration date, insurance date etc.) on Android/iOS app",
       link: "https://www.linkedin.com/posts/hackgod_iot-android-ios-activity-6776868398413422593-1GOf?utm_source=share&utm_medium=member_desktop"
     },
     {
