@@ -40,7 +40,6 @@ export default function RootLayout({
       <body
         className={`${inter.className} bg-neutral-950 overflow-y-scroll overflow-x-hidden`}
       >
-       
           <StarsCanvas />
           <FloatingNav navItems={navItems} />
           {children}

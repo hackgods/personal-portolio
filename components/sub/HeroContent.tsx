@@ -13,10 +13,34 @@ const HeroContent = () => {
     <motion.div
       initial="hidden"
       animate="visible"
-      className="flex flex-row items-center justify-center px-20 mt-10 w-full z-[20]"
-    >
-      <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
+      className="flex flex-col md:flex-row items-center justify-center px-20 mt-10 w-full z-[20]">
+      
 
+      <motion.div
+              variants={slideInFromRight(0.8)}
+              className="block sm:hidden justify-center items-center relative my-5">
+              <Image
+                className="w-screen transform hover:scale-125 transition duration-500"
+                src="/mainIconsdark.svg"
+                alt="work icons"
+                height={2000}
+                width={2000}
+                loading="eager"
+              />
+              <div className="w-fit absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                <Image
+                  className="rounded-full transform hover:scale-125 transition duration-500"
+                  src="/me.jpeg"
+                  alt="me"
+                  height={300}
+                  width={300}
+                  loading="eager"
+                />
+              </div>
+      </motion.div>
+
+
+      <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
         <motion.div
           variants={slideInFromLeft(0.5)}
           className="flex flex-col gap-6 mt-6 text-5xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white max-w-[600px] w-auto h-auto">
@@ -49,22 +73,20 @@ const HeroContent = () => {
                 Get In Touch
             </motion.a>
         </div>
-
       </div>
 
-      <div className="flex justify-center items-center">
-            <motion.div
+      <motion.div
               variants={slideInFromRight(0.8)}
-              className="my-5 flex justify-center items-center relative">
+              className="hidden md:flex justify-center items-center relative my-5">
               <Image
-                className="transform hover:scale-125 transition duration-500"
+                className="w-screen transform hover:scale-125 transition duration-500"
                 src="/mainIconsdark.svg"
                 alt="work icons"
                 height={2000}
                 width={2000}
                 loading="eager"
               />
-              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+              <div className="w-fit absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                 <Image
                   className="rounded-full transform hover:scale-125 transition duration-500"
                   src="/me.jpeg"
@@ -74,9 +96,7 @@ const HeroContent = () => {
                   loading="eager"
                 />
               </div>
-            </motion.div>
-      </div>
-
+      </motion.div>
 
 
     </motion.div>

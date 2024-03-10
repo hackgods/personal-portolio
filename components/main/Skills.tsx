@@ -17,7 +17,7 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="py-20 z-30 snap-always snap-start"
+      className="py-20 z-30 snap-always snap-start flex flex-col justify-center items-center"
       style={{ transform: "scale(0.9" }}>
       
       <SkillText />
@@ -28,8 +28,8 @@ const Skills = () => {
       animate={inView ? "visible" : "hidden"}
       variants={fadeUp}
       
-      className="bg-zinc-950 border-4 border-zinc-800 rounded-3xl flex flex-col items-center justify-center gap-3 h-fit relative overflow-hidden p-10">
-          <div className="z-20 grid grid-cols-5 sm:grid-cols-5 md:grid-cols-10 flex-row justify-center flex-wrap mt-4 gap-10 items-center px-5">
+      className="bg-zinc-950 border-4 border-zinc-800 rounded-3xl flex flex-col items-center justify-center gap-3 h-fit relative overflow-hidden p-10 w-fit">
+          <div className="z-20 grid grid-cols-5 sm:grid-cols-5 md:grid-cols-10 flex-row justify-center flex-wrap mt-4 gap-3 md:gap-8 items-center">
             {Skill_data.map((image, index) => (
               <SkillDataProvider key={index} src={image.src} index={index} />
             ))}
