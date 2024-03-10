@@ -14,7 +14,6 @@ const Bento = () => {
   return (
     <section className="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-5">
       
-      
       <motion.div 
       ref={ref}
       initial="hidden"

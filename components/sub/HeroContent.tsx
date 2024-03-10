@@ -18,7 +18,7 @@ const HeroContent = () => {
 
       <motion.div
               variants={slideInFromRight(0.8)}
-              className="block sm:hidden justify-center items-center relative my-5">
+              className="block sm:hidden justify-center items-center relative mt-10">
               <Image
                 className="w-screen transform hover:scale-125 transition duration-500"
                 src="/mainIconsdark.svg"
