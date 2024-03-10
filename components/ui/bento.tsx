@@ -1,10 +1,9 @@
 "use client"
 
-import React from 'react'
-import Image from 'next/image'
 import { favStacks, personalData } from '@/constants'
+import { fadeUp } from '@/utils/motion'
 import { motion } from 'framer-motion'
-import { fadeUp, slideInFromLeft } from '@/utils/motion'
+import Image from 'next/image'
 import { useInView } from 'react-intersection-observer'
 
 const Bento = () => {

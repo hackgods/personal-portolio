@@ -1,12 +1,12 @@
+import Footer from "@/components/main/Footer";
+import StarsCanvas from "@/components/main/StarBackground";
+import { FloatingNav } from "@/components/ui/floating-navbar";
+import { navItems } from "@/constants";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import StarsCanvas from "@/components/main/StarBackground";
-import Navbar from "@/components/main/Navbar";
-import Footer from "@/components/main/Footer";
-import { FloatingNav } from "@/components/ui/floating-navbar";
-import { navItems } from "@/constants";
-import NoMobileScreen from "@/components/sub/NoMobileScreen";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -45,7 +45,8 @@ export default function RootLayout({
           <FloatingNav navItems={navItems} />
           {children}
           <Footer />
-       
+          <Analytics/>
+          <SpeedInsights/>
       </body>
     </html>
   );

@@ -1,7 +1,5 @@
 "use client";
 
-import { slideInFromLeft, slideInFromTop } from "@/utils/motion";
-import { motion } from "framer-motion";
 import { BackgroundBeams } from "../ui/background-beams";
 import Bento from "../ui/bento";
 
