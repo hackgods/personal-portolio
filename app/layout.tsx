@@ -5,10 +5,13 @@ import { navItems } from "@/constants";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["100",'200','300','400','500','600','700','800','900']
+});
 
 export const metadata: Metadata = {
   title: "Saurabh Suresh's Portfolio",
@@ -38,7 +41,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="snap-y snap-mandatory">
       <body
-        className={`${inter.className} bg-neutral-950 overflow-y-scroll overflow-x-hidden`}
+        className={`${poppins.className} bg-neutral-950 overflow-y-scroll overflow-x-hidden`}
       >
           <StarsCanvas />
           <FloatingNav navItems={navItems} />
