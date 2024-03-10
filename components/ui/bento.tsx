@@ -26,10 +26,10 @@ const Bento = () => {
           className="border-gradient animate-bgWaves h-full w-full rounded-2xl">
           <div className="border-gradient__box">
             <div className="mt-4">
-              <h2 className="mb-2 text-2xl">
+              <p className="mb-2 text-2xl">
                 Hello 😈 <br />
                 I&apos;m <span className="text-indigo-500">Saurabh</span>
-              </h2>
+              </p>
               <br/>
               <p className="text-gray-400">
                   With a Master&apos;s in Advanced Computer Science from Newcastle University, I bring over three years of hands-on experience in software engineering. <br/> <br/>
@@ -61,7 +61,7 @@ const Bento = () => {
             <a href="https://twitter.com/hxckgxd" target="_blank" className="btn">Follow</a>
           </div>
           <div className="p-4">
-            <h2 className="text-xl">Saurabh Suresh </h2>
+            <p className="text-xl">Saurabh Suresh </p>
             <p className="text-zinc-400">@hxckgxd</p>
             <p className="text-zinc-600">A passionate Full stack web & mobile developer</p>
           </div>
@@ -107,9 +107,9 @@ const Bento = () => {
             </span>
             <span className="text-sm">Available for work</span>
           </div>
-          <h2 className="text-5xl lg:text-4xl text-zinc-300 text-right">
+          <p className="text-5xl lg:text-4xl text-zinc-300 text-right">
             Contact me
-          </h2>
+          </p>
           <img className="w-52 lg:w-44 absolute top-2 -right-4 z-0 opacity-20 -rotate-12" src="/envelope-regular.svg"
             alt="" />
         </div>
@@ -140,7 +140,7 @@ const Bento = () => {
       variants={fadeUp}
       className="card bg-backdrop-gradient order-4 lg:order-none row-span-2 col-span-2 p-2 relative group">
         <div className="bg-backdrop-blur">
-          <h2 className="font-medium text-3xl text-black/70">Favourite Tech Stacks</h2>
+          <p className="font-medium text-3xl text-black/70">Favourite Tech Stacks</p>
 
           <div className="flex -gap-8 mt-8 justify-between">
 

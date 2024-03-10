@@ -24,9 +24,9 @@ const HeroContent = () => {
           variants={slideInFromLeft(0.5)}
           className="flex flex-col gap-6 mt-6 text-5xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white max-w-[600px] w-auto h-auto">
            
-          <span className="text-transparent bg-clip-text bg-gradient-to-b from-neutral-200 to-neutral-600 uppercase">
+          <h1 className="text-transparent bg-clip-text bg-gradient-to-b from-neutral-200 to-neutral-600 uppercase">
               {personalData.fName} {personalData.lName}
-          </span>
+          </h1>
         </motion.div>
 
         <motion.p

@@ -8,10 +8,10 @@ const Projects = () => {
       className="flex flex-col items-center justify-center py-15 mb-20 snap-always snap-start"
       id="projects"
     >
-      <div
+      <h2
           className="text-5xl font-semibold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600 mt-4 mb-8 p-2">
           Projects
-        </div>
+        </h2>
 
       <div className="h-full w-full grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-10 px-10">
         {projects.map((project, index) => (

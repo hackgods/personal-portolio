@@ -8,10 +8,10 @@ import Bento from "../ui/bento";
 const About = () => {
   return (
     <div className="flex flex-col relative items-center min-h-screen w-full h-full bg-neutral-950 z-[20] snap-always snap-start" id="about-me">
-        <div
+        <h2
           className="text-5xl font-semibold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600 mt-4">
           About Me
-        </div>
+        </h2>
 
         <div 
           className="flex flex-row h-full w-full p-4 justify-center items-center">
