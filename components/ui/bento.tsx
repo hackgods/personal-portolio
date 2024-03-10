@@ -33,7 +33,7 @@ const Bento = () => {
               <p className="text-gray-400">
                   With a Master&apos;s in Advanced Computer Science from Newcastle University, I bring over three years of hands-on experience in software engineering. <br/> <br/>
                   My portfolio showcases a commitment to excellence, with projects demonstrating seamless integration of frontend technologies for optimal user experiences. I ensure robust functionality to complement frontend designs. <br/> <br/>
-                  Get in touch with me to discuss how I can contribute to your projects.
+                  <b>Get in touch with me to discuss how I can contribute to your projects.</b>
               </p>
             </div>
           </div>
@@ -106,11 +106,11 @@ const Bento = () => {
             </span>
             <span className="text-sm">Available for work</span>
           </div>
-          <p className="text-5xl lg:text-4xl text-zinc-300 text-right">
+          <p className="text-3xl lg:text-4xl text-zinc-300 text-right">
             Contact me
           </p>
           <img className="w-52 lg:w-44 absolute top-2 -right-4 z-0 opacity-20 -rotate-12" src="/envelope-regular.svg"
-            alt="" />
+            alt="envelope" />
         </div>
         <a href={`mailto:${personalData.email}`} className="link-full"
           title="Click to send email"></a>
@@ -125,9 +125,9 @@ const Bento = () => {
       className="card order-6 lg:order-none overflow-hidden relative">
         <div className="flex h-full flex-col justify-between gap-5 p-5 relative">
             <p className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-b to-neutral-200 from-neutral-600">100k +</p>   
-            <p className="text-base relative text-zinc-300">Lines of code written</p> 
+            <p className="text-base relative text-zinc-300 z-10">Lines of code written</p> 
             <div className="circle-blur rounded-3xl"></div>
-        <img className="w-52 lg:w-44 absolute top-2 -right-4 z-0 opacity-100 -rotate-12" src="/code.svg" alt="Code" />
+        <img className="w-52 lg:w-44 absolute top-2 -right-4 z-0 opacity-100 -rotate-12 z-0" src="/code.svg" alt="Code" />
         </div>
       </motion.div>
 
@@ -139,9 +139,9 @@ const Bento = () => {
       variants={fadeUp}
       className="card bg-backdrop-gradient order-4 lg:order-none row-span-2 col-span-2 p-2 relative group">
         <div className="bg-backdrop-blur">
-          <p className="font-medium text-3xl text-black/70">Favourite Tech Stacks</p>
+          <p className="font-medium text-2xl lg:text-3xl text-black/70">Favourite Tech Stacks</p>
 
-          <div className="flex -gap-8 mt-8 justify-between">
+          <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-8 gap-8 mt-8 justify-between">
 
         {favStacks.map((item, index) => (
                 <Image

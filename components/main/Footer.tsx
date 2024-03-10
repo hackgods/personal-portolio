@@ -4,7 +4,7 @@ import { personalData } from "@/constants";
 
 const Footer = () => {
   return (
-    <footer className="text-white w-full snap-always snap-start">
+    <footer className="text-white w-full snap-always snap-start p-2">
       <nav className="flex flex-wrap justify-center py-4 gap-6">
 
         <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="flex flex-row items-center my-[15px] text-white hover:text-gray-300">
