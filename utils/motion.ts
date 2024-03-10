@@ -45,8 +45,8 @@ export function slideInFromLeft(delay: number) {
       scale: 1,
       transition: {
         delay: 0.1,
-        duration: 0.9,
-        ease: [0, 0.71, 0.2, 1.01]
+        duration: 0.5,
+        ease: [0.075, 0.82, 0.165, 1],
       },
     },
   };
