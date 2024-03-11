@@ -39,7 +39,7 @@ Clone the repository:
 
 Install dependencies:
 ```bash
-  cd portfolio
+  cd personal-portolio
   npm install
 ```
 
