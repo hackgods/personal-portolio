@@ -42,12 +42,6 @@ Install dependencies:
   cd personal-portolio
   npm install
 ```
-
-Install dependencies:
-```bash
-  cd portfolio
-  npm install
-```
     
 ## Usage
 #### Constants Directory
