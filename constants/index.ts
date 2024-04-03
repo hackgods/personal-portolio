@@ -1,4 +1,4 @@
-export const Skill_data = [
+export const skillData = [
     {
       skill_name: "Android",
       src: "/android.png",
@@ -14,86 +14,58 @@ export const Skill_data = [
     {
       skill_name: "CSS",
       src: "/css.png",
-      
-      
     },
     {
       skill_name: "Tailwind CSS",
       src: "/tailwind.png",
-      
-      
     },
     {
-      skill_name: "Bootstrap",
-      src: "/bootstrap.png",
-      
-      
+      skill_name: ".NET",
+      src: "/dotnet.png",
     },
     {
       skill_name: "JavaScript",
       src: "/js.png",
-     
-      
     },
     {
       skill_name: "TypeScript",
       src: "/ts.png",
-      
-      
     },
     {
       skill_name: "React",
       src: "/react.png",
-      
-      
     },
     {
       skill_name: "Next JS 14",
       src: "/next.png",
-      
-      
     },
     {
       skill_name: "Flutter",
       src: "/flutter.png",
-      
-      
     },
     {
       skill_name: "Vue.js",
       src: "/vuejs.png",
-      
-      
     },
     {
       skill_name: "React Native",
       src: "/ReactNative .png",
-      
-      
     },
     {
       skill_name: "Redux",
       src: "/redux.png",
-      
-      
     },
     {
       skill_name: "React Query",
       src: "/reactquery.png",
-      
-      
     },
     {
       skill_name: "Framer Motion",
       src: "/framer.png",
-      
-      
     },
     {
       skill_name: "Stripe Payment",
       src: "/stripe.webp",
-      
-      
     },
     {
       skill_name: "Node JS",
@@ -106,86 +78,58 @@ export const Skill_data = [
     {
       skill_name: "Flask",
       src: "/flask.png",
-      
-      
     },
     {
       skill_name: "Fast API",
       src: "/fastapi.png",
-      
-      
     },
     {
       skill_name: "REST API",
       src: "/restapi.png",
-      
-      
     },
     {
       skill_name: "Firebase",
       src: "/Firebase.png",
-      
-      
     },
     {
       skill_name: "Mongo DB",
       src: "/mongodb.png",
-      
-      
     },
     {
       skill_name: "PostgreSQL",
       src: "/postgresql.png",
-      
-      
     },
     {
       skill_name: "MySQL",
       src: "/mysql.png",
-      
-      
     },
     {
       skill_name: "Cassandra DB",
       src: "/cassandra.png",
-      
-      
     },
     {
       skill_name: "Redis",
       src: "/redis.png",
-      
-      
     },
     {
       skill_name: "SQLite",
       src: "/sqlite.png",
-      
-      
     },
     {
       skill_name: "Prisma",
       src: "/prisma.webp",
-      
-      
     },
     {
       skill_name: "Graphql",
       src: "/graphql.png",
-      
-      
     }, 
     {
       skill_name: "Tauri",
       src: "/tauri.svg",
-      
-      
     },
     {
       skill_name: "Docker",
       src: "/docker.webp",
-      
-      
     },
     {
       skill_name: "Rust",
@@ -194,50 +138,34 @@ export const Skill_data = [
     {
       skill_name: "Go",
       src: "/go.png",
-      
-      
     },
     {
       skill_name: "Python",
       src: "/python.png",
-      
-      
     },
     {
       skill_name: "Java",
       src: "/java.png",
-      
-      
     },
     {
       skill_name: "PhP",
       src: "/php.png",
-      
-      
     },
     {
       skill_name: "IoT",
       src: "/iot.png",
-      
-      
     },
     {
       skill_name: "Amazon Web Services",
       src: "/aws.png",
-      
-      
     },
     {
       skill_name: "Azure",
       src: "/azure.png",
-      
-      
     },
     {
       skill_name: "Google Cloud",
       src: "/googlecloud.png",
-      
-      
     },
     {
       skill_name: "Apache Kafka",
@@ -250,14 +178,10 @@ export const Skill_data = [
     {
       skill_name: "MQTT",
       src: "/mqtt.png",
-      
-      
     },
     {
       skill_name: "Rabbit MQ",
       src: "/rabbitmq.png",
-      
-      
     },
     {
       skill_name: "Jenkins",
@@ -275,21 +199,7 @@ export const Skill_data = [
       skill_name: "Figma",
       src: "/figma.png", 
     },
-  
   ];
-  
-  export const Socials = [
-    {
-      name: "LinkedIn",
-      src: "/linkedin.png",
-    },
-    {
-      name: "Instagram",
-      src: "/instagram.svg",
-    },
-  ];
-
-
   export const navItems = [
     {
       name: "Home",
@@ -308,10 +218,6 @@ export const Skill_data = [
       link: "#projects"
     },
   ];
-  
-  
-  
-  
  export const aboutItems = [
     {
       title: "MSc. Advanced Computer Science",
@@ -346,11 +252,7 @@ export const Skill_data = [
       src: "",
       className: "md:col-span-1",
     },
-  
   ]; 
-  
-  
-
   export const favStacks = [
     {
       name: "TS",
@@ -385,8 +287,6 @@ export const Skill_data = [
       src: "/aws.png"
     },
   ];  
-  
-
 export const projects = [
     {
       src: "/projects/movies-ott.jpg",
@@ -431,7 +331,6 @@ export const projects = [
       link: "https://www.linkedin.com/posts/hackgod_smartcredit-smartpayment-payments-activity-6785100651106971648-bRdr?utm_source=share&utm_medium=member_desktop"
     }
   ];
-
   export const personalData = {
     fName: "Saurabh",
     lName: "Suresh",
@@ -446,5 +345,5 @@ export const projects = [
     twitter: "https://twitter.com/hxckgxd",
     instagram: "https://www.instagram.com/_hackgod/",
     twitterCover: "https://pbs.twimg.com/profile_banners/1737440772490711040/1709913760/1500x500",
-    resumeLink: "https://drive.google.com/uc?export=download&id=1xedHbKHa0_Cpax9QtbaYOchJVXu5USHq",
+    resumeLink: "https://drive.google.com/uc?export=download&id=10hY9gEWL5aNvd5wj8jn3BBnAK6T_iu-F",
   };

@@ -1,6 +1,6 @@
 "use client"
 
-import { Skill_data } from "@/constants";
+import { skillData } from "@/constants";
 import React from "react";
 import SkillDataProvider from "../sub/SkillDataProvider";
 import SkillText from "../sub/SkillText";
@@ -30,7 +30,7 @@ const Skills = () => {
       
       className="bg-zinc-950 border-4 border-zinc-800 rounded-3xl flex flex-col items-center justify-center gap-3 h-fit relative overflow-hidden p-10 w-fit">
           <div className="z-20 grid grid-cols-5 sm:grid-cols-5 md:grid-cols-10 flex-row justify-center flex-wrap mt-4 gap-3 md:gap-8 items-center">
-            {Skill_data.map((image, index) => (
+            {skillData.map((image, index) => (
               <SkillDataProvider key={index} src={image.src} index={index} />
             ))}
           </div>
